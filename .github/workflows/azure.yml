@@ -23,7 +23,6 @@ jobs:
           npm install
           npm run build --if-present
           npm run test --if-present
-        working-directory: ./build
       - name: "Deploy to Azure WebApp"
         uses: azure/webapps-deploy@v2
         with:
